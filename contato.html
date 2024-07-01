@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="CSS/Estilo.css"> 
+
+    <title>Harmony Store</title>
+    
+  </head>
+  <body>
+    <header>
+    </div>
+    <div class="banner">
+    </div>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <img src="imagens/disco.png">
+              <a class="navbar-brand" href="#">Harmony
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarScroll">
+                <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                  <li class="nav-item">
+                    <a class="nav-link"  href="index.html">Home</a>
+
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="parceiros.html">Parceiros</a>
+                  </li>
+
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="contato.html">Contate-nos</a>
+                  </li>
+
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Produtos
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="roupas.html">Guarda-Roupas</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="discos.html">Discos de Vinil</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="figures.html">Figures</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="canecas.html">Canecas</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="bottons.html">Bottons</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="adesivo.html">Adesivos</a></li>
+
+
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="Sobre.html">Sobre</a>
+                </ul>
+
+          </nav>
+
+    </header>
+    <section>
+      <div class="formulario">
+          <div style="display: flex; justify-content: center; align-items: center; color: aliceblue;">
+              <h1>Contato</h1>
+          </div>
+          <form action="" style="margin: 0 auto; width: 80vw;">
+              <div class="mb-3">
+                  <label for="formGroupExampleInput" class="form-label">Nome</label>
+                  <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Ex: Fulana de Tal">
+              </div>
+              <div class="mb-3">
+                  <label for="formGroupExampleInput2" class="form-label">E-Mail</label>
+                  <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Ex: fulana@gmail.com">
+              </div>
+              <div class="mb-3">
+                  <label for="formGroupExampleInput3" class="form-label">Telefone</label>
+                  <input type="text" class="form-control" id="formGroupExampleInput3" placeholder="Ex: (85) 999083353">
+              </div>
+              <div class="form-floating">
+                  <textarea class="form-control" placeholder="Comente aqui" id="floatingTextarea"></textarea>
+                  <label for="floatingTextarea">Comentários</label>
+              </div>
+              <button type="button" onclick="validarFormulario()" class="btn btn-primary" style="margin: 10px auto; color: #fff; background-color: black;">Enviar</button>
+          </form>
+          <script>
+              function validarFormulario() {
+                  // Pegar valores dos campos
+                  let nome = document.getElementById("formGroupExampleInput").value;
+                  let email = document.getElementById("formGroupExampleInput2").value;
+                  let telefone = document.getElementById("formGroupExampleInput3").value;
+                  let comentarios = document.getElementById("floatingTextarea").value;
+
+                  if (nome === "" || email === "" || telefone === "" || comentarios === "") {
+                      alert("Por favor, preencha todos os campos.");
+                  } else {
+
+                      alert("Formulário enviado com sucesso!");
+
+                  }
+              }
+          </script>
+      </div>
+  </section>
+  
